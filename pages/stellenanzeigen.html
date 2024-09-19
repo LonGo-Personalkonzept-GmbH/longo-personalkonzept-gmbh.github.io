@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Stellenanzeigen</title>
+    <meta name="description" content="Stellenanzeigen der LonGo Personalkonzept GmbH">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" href="../icon.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../icon.png">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="https://longo-personalkonzept.bewerbung.jobs/widget/tts-search.min.js"></script>
+</head>
+<body>
+    <style>
+        :root {
+        --longo-grey: #343434;
+        --longo-dark-grey: #1B1B1B;
+        --longo-blue: #009A86;
+        --longo-dark-blue: #52B39F;
+        --longo-pink: #e9206db9;
+        --background-color: #2A2D34;
+        }
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+            min-height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        header {
+            padding: 7em 5em 4em 5em;
+        }
+        header img {
+            display: block;
+            max-width: 30em;;
+            margin: 0 auto;
+        }
+        header h1 {
+            text-align: center;
+            margin: 1.5em 0 0 0;
+        }
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            background-color: #2A2D34;
+            color: rgba(255, 255, 255, 0.65);
+
+            background-image: linear-gradient(35deg, var(--longo-blue) 15%, var(--longo-pink) 85%);
+            margin: 0;
+        }
+        #ttsSearchWidget {
+            max-width: calc(100%-4em); 
+            margin: 0 17em 4em 17em; 
+            padding: 2.5em 0 0 0;
+            height: calc(100vh - 2.5em);
+        }
+
+                /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #ffffff00;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: var(--longo-dark-grey);
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: var(--longo-grey);
+        border-radius: 10px;
+        }
+
+        input {
+            background-color: var(--longo-grey);
+        }
+
+        @media only screen and (max-width: 1170px) and (max-height: 2796px) {
+            header {
+                padding: 1em;
+            }
+
+            #ttsSearchWidget {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 2em 0; 
+            padding: 0;
+            height: calc(100vh - 2.5em);
+        }
+            
+            main {
+                margin: 0 0 4em 0;
+            }
+        }
+    </style>
+    <header>
+        <a href="../index.html"><img src="../img/logo_cropped.svg" alt="Logo der LonGo-Personalkonzept GmbH"></a>
+        <h1>Wir bringen Sie weiter!</h1>
+    </header>
+
+    <div id="ttsSearchWidget"></div>
+
+    <footer>
+        <ul>
+            <li><a href="../docs/Downloads/agb.pdf" target="_blank">AGB</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="impressum.html">Kontakt</a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        ttsSearch.create({"containerId":"ttsSearchWidget","accountId":"214","officeId":"","categoryId":"","preventPreload":false,"colors":{"searchBarFont":"#FFFFFFA6","searchBarBackground":"#1B1B1BFF","searchBarBorder":"#dbdbdb","highlightFont":"#52B38FFF","highlightBackground":"#343434FF","resultFont":"#FFFFFFA6","resultBackground":"#1B1B1BFF","resultBorder":"#1B1B1BFF"},"borderRadius":"10px","hardShadow":"0px","text":{"placeholderSearchJobTitle":"Was ist dein Talent?","placeholderSearchCity":"Wo","searchButton":"Suchen","areaSearch":"Umkreis","emptySearchResult":"Keine passenden Stellenanzeigen gefunden","searchError":"Es konnten keine Stellenanzeigen geladen werden","searching":"Laden..."},"result":{"lineOneLeft":"JOBADTITLE","lineOneRight":"JOBADCITY","lineTwoLeft":"CONTRACTTYPE","lineTwoRight":"STARTOFACTIVITY","lineThreeLeft":"HIDDEN","lineThreeRight":"HIDDEN"},"numberOfItems":null});
+      </script>
+</body>
+</html>
